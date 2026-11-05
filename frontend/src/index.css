@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Remplace le rouge brique principal par un Bleu Hydraulique Institutionnel (Sky/Cobalt) */
+  --color-red-50: #f0f9ff;
+  --color-red-100: #e0f2fe;
+  --color-red-200: #bae6fd;
+  --color-red-300: #7dd3fc;
+  --color-red-400: #38bdf8;
+  --color-red-500: #0ea5e9;
+  --color-red-600: #0284c7;
+  --color-red-700: #0369a1;
+  --color-red-800: #075985;
+  --color-red-900: #0c4a6e;
+  --color-red-950: #082f49;
+}
+
+.leaflet-container {
+  background: #ffffff !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px !important;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  padding: 0 !important;
+  border-radius: 1rem !important;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid #e2e8f0;
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 0 !important;
+  width: 288px !important;
+}
+
+.custom-popup .leaflet-popup-tip {
+  background: #ffffff;
+}
+
+@variant dark (&:is(.dark *));

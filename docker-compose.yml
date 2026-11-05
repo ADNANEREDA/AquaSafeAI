@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: mri_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env # Assure-toi que ton fichier .env avec DATABASE_URL est bien là
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: mri_frontend
+    ports:
+      - "5173:80" # Mappe le port 5173 de ton PC vers le port 80 du conteneur Nginx
+    depends_on:
+      - backend
+    restart: unless-stopped
