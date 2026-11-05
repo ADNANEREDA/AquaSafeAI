@@ -10,7 +10,6 @@
 * **Interactive Map (GIS):** Spatial visualization of dams by hydrological basin on an interactive map of Morocco (Leaflet integration) with semantic color coding and urban landmarks.
 * **7-Day Predictions (Machine Learning):** Predictive modeling powered by a `HistGradientBoostingRegressor` algorithm utilizing historical water levels and weather data (temperature, rainfall).
 * **Crisis Simulator:** An interactive tool allowing users to manually adjust temperature increases and rainfall levels to simulate climate impacts on the future trajectory of dams.
-* **Light / Dark Mode:** Adaptive interface offering optimal visual comfort (institution-grade Blue Ocean and Slate color palette).
 
 ---
 
